@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serwis o filmach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header-main">
+    <h1><a href="index.html">Serwis o filmach</a></h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Wyszukaj film...">
+      <button type="submit">Szukaj</button>
+
+      <div class="advanced-wrapper">
+
+      <label for="advanced-search-checkbox">Advanced Search</label>
+      <input type="checkbox" id="advanced-search-checkbox">
+
+    </div>
+    
+      <div id="advanced-search-panel" style="display: none;">
+        <label for="type-select">Type:</label>
+        <select id="type-select">
+          <option value="">All</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+        <label for="year-input">Year:</label>
+        <input type="text" id="year-input">
+      </div>
+    </form>        
+  </header>
+<div class="wrapper">
+  <div id="results-container"></div>
+  <div id="pagination-container"></div>
+  </div>
+
+  <!-- <section class="hero">
+    <h2>Najlepiej oceniane filmy</h2>
+     Tutaj umieść kod HTML, który wyświetli listę najlepiej ocenianych filmów
+  </section> -->
+
+  <footer>
+    <p>&copy; 2023 Serwis o filmach. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
